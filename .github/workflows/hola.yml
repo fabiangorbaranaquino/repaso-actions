@@ -11,3 +11,7 @@ jobs:
         uses: actions/checkout@v4
       - name: saludar
         run: echo "Hola desde GitHub"
+      - name: fecha y archivos
+        run: |
+          date
+          ls -la
