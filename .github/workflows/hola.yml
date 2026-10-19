@@ -1,10 +1,13 @@
 name: primer workflow
 
-on:
+on: [push]
 
 jobs:
 
   saludar:
     runs-on: ubuntu-latest
     steps:
-      
+      - name: descargar el code
+        uses: actions/checkout@v4
+      - name: saludar
+        run: echo "Hola desde GitHub"
